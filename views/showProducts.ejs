@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <th>Product Name</th>
+            <th>Product Price</th>
+            <th>Product Description</th>
+        </thead>
+        <tbody>
+            <% for (var i=0; i<productsData.length;i++){%>
+                <tr>
+                    <td><%= productsData[i].productName %></td>
+                    <td><%= productsData[i].productPrice %></td>
+                    <td><%= productsData[i].productDescription %></td>
+                </tr>
+            <% } %>   
+        </tbody>
+    </table>
+</body>
+</html>
